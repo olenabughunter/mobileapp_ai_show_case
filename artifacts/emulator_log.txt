@@ -1,41 +1,40 @@
-77658:12-01 10:45:51.837 I/SmokeTestsPerf(10151): Starting test: ${testName.methodName}
-77899:12-01 10:45:54.835 I/SmokeTestsPerf(10151): Finished test: ${testName.methodName} durationMs=$duration
-80574:12-01 10:45:56.093 I/SmokeTestsPerf(10151): Starting test: ${testName.methodName}
-80661:12-01 10:45:56.517 I/SmokeTestsPerf(10151): Finished test: ${testName.methodName} durationMs=$duration
-82819:12-01 10:45:57.684 I/SmokeTestsPerf(10151): Starting test: ${testName.methodName}
-82918:12-01 10:45:58.061 I/SmokeTestsPerf(10151): Finished test: ${testName.methodName} durationMs=$duration
-84829:12-01 10:45:59.597 I/SmokeTestsPerf(10151): Starting test: ${testName.methodName}
-84947:12-01 10:45:59.942 I/SmokeTestsPerf(10151): Finished test: ${testName.methodName} durationMs=$duration
-98196:12-01 10:47:09.192 I/SmokeTestsPerf(10441): Starting test: ${testName.methodName}
-98455:12-01 10:47:12.136 I/SmokeTestsPerf(10441): Finished test: ${testName.methodName} durationMs=$duration
-100775:12-01 10:47:13.891 I/SmokeTestsPerf(10441): Starting test: ${testName.methodName}
-100825:12-01 10:47:13.964 I/SmokeTestsPerf(10441): Finished test: ${testName.methodName} durationMs=$duration
-103096:12-01 10:47:15.149 I/SmokeTestsPerf(10441): Starting test: ${testName.methodName}
-103191:12-01 10:47:15.492 I/SmokeTestsPerf(10441): Finished test: ${testName.methodName} durationMs=$duration
-105037:12-01 10:47:16.659 I/SmokeTestsPerf(10441): Starting test: ${testName.methodName}
-105130:12-01 10:47:16.990 I/SmokeTestsPerf(10441): Finished test: ${testName.methodName} durationMs=$duration
-127170:12-01 11:25:32.712 I/SmokeTestsPerf(10987): Starting test: ${testName.methodName}
-127251:12-01 11:26:05.398 I/SmokeTestsPerf(10987): Finished test: ${testName.methodName} durationMs=$duration
-127633:12-01 11:26:05.701 I/SmokeTestsPerf(10987): Starting test: ${testName.methodName}
-127739:12-01 11:26:38.432 I/SmokeTestsPerf(10987): Finished test: ${testName.methodName} durationMs=$duration
-128092:12-01 11:26:38.668 I/SmokeTestsPerf(10987): Starting test: ${testName.methodName}
-128138:12-01 11:27:11.383 I/SmokeTestsPerf(10987): Finished test: ${testName.methodName} durationMs=$duration
-128507:12-01 11:27:11.616 I/SmokeTestsPerf(10987): Starting test: ${testName.methodName}
-128545:12-01 11:27:44.349 I/SmokeTestsPerf(10987): Finished test: ${testName.methodName} durationMs=$duration
-132796:12-01 11:31:00.113 I/SmokeTestsPerf(11389): Starting test: s_sm_04_deleteNote_removesFromList
-133283:12-01 11:31:34.851 I/SmokeTestsPerf(11389): Finished test: s_sm_04_deleteNote_removesFromList durationMs=34737
-133340:12-01 11:31:34.901 I/SmokeTestsPerf(11389): Starting test: s_sm_01_appLaunch_homeVisible
-133789:12-01 11:32:08.759 I/SmokeTestsPerf(11389): Finished test: s_sm_01_appLaunch_homeVisible durationMs=33858
-133836:12-01 11:32:08.773 I/SmokeTestsPerf(11389): Starting test: s_sm_02_createNote_showsInList
-134216:12-01 11:32:42.545 I/SmokeTestsPerf(11389): Finished test: s_sm_02_createNote_showsInList durationMs=33772
-134265:12-01 11:32:42.567 I/SmokeTestsPerf(11389): Starting test: s_sm_03_updateNote_changesTitle
-134723:12-01 11:33:16.264 I/SmokeTestsPerf(11389): Finished test: s_sm_03_updateNote_changesTitle durationMs=33698
-140206:12-01 11:41:15.045 I/SmokeTestsPerf(11885): Starting test: s_sm_04_deleteNote_removesFromList
-140527:12-01 11:41:16.952 I/SmokeTestsPerf(11885): Finished test: s_sm_04_deleteNote_removesFromList durationMs=1903
-140574:12-01 11:41:16.969 I/SmokeTestsPerf(11885): Starting test: s_sm_01_appLaunch_homeVisible
-140856:12-01 11:41:17.855 I/SmokeTestsPerf(11885): Finished test: s_sm_01_appLaunch_homeVisible durationMs=885
-140897:12-01 11:41:17.875 I/SmokeTestsPerf(11885): Starting test: s_sm_02_createNote_showsInList
-141185:12-01 11:41:18.626 I/SmokeTestsPerf(11885): Finished test: s_sm_02_createNote_showsInList durationMs=751
-141226:12-01 11:41:18.641 I/SmokeTestsPerf(11885): Starting test: s_sm_03_updateNote_changesTitle
-141516:12-01 11:41:19.199 I/SmokeTestsPerf(11885): Finished test: s_sm_03_updateNote_changesTitle durationMs=557
-146233:12-01 11:44:31
+28242:12-01 13:56:26.787 I/SmokeTestsPerf( 3582): Starting test: s_sm_04_deleteNote_removesFromList
+28585:12-01 13:56:27.282 I/SmokeTestsPerf( 3582): Finished test: s_sm_04_deleteNote_removesFromList durationMs=494
+28728:12-01 13:56:27.693 I/SmokeTestsPerf( 3582): Starting test: s_sm_01_appLaunch_homeVisible
+29029:12-01 13:56:27.878 I/SmokeTestsPerf( 3582): Finished test: s_sm_01_appLaunch_homeVisible durationMs=185
+29234:12-01 13:56:28.296 I/SmokeTestsPerf( 3582): Starting test: s_sm_02_createNote_showsInList
+29563:12-01 13:56:28.458 I/SmokeTestsPerf( 3582): Finished test: s_sm_02_createNote_showsInList durationMs=162
+29811:12-01 13:56:28.867 I/SmokeTestsPerf( 3582): Starting test: s_sm_03_updateNote_changesTitle
+30148:12-01 13:56:29.058 I/SmokeTestsPerf( 3582): Finished test: s_sm_03_updateNote_changesTitle durationMs=192
+32975:12-01 13:57:23.158 I/SmokeTestsPerf( 3880): Starting test: s_sm_04_deleteNote_removesFromList
+33597:12-01 13:57:26.295 I/SmokeTestsPerf( 3880): Finished test: s_sm_04_deleteNote_removesFromList durationMs=3137
+33802:12-01 13:57:27.360 I/SmokeTestsPerf( 3880): Starting test: s_sm_01_appLaunch_homeVisible
+34143:12-01 13:57:27.549 I/SmokeTestsPerf( 3880): Finished test: s_sm_01_appLaunch_homeVisible durationMs=189
+34304:12-01 13:57:28.624 I/SmokeTestsPerf( 3880): Starting test: s_sm_02_createNote_showsInList
+34618:12-01 13:57:29.110 I/SmokeTestsPerf( 3880): Finished test: s_sm_02_createNote_showsInList durationMs=485
+34973:12-01 13:57:30.179 I/SmokeTestsPerf( 3880): Starting test: s_sm_03_updateNote_changesTitle
+35365:12-01 13:57:30.631 I/SmokeTestsPerf( 3880): Finished test: s_sm_03_updateNote_changesTitle durationMs=451
+38052:12-01 13:59:10.445 I/SmokeTestsPerf( 4211): Starting test: s_sm_04_deleteNote_removesFromList
+38712:12-01 13:59:13.532 I/SmokeTestsPerf( 4211): Finished test: s_sm_04_deleteNote_removesFromList durationMs=3087
+38905:12-01 13:59:14.600 I/SmokeTestsPerf( 4211): Starting test: s_sm_01_appLaunch_homeVisible
+39220:12-01 13:59:14.772 I/SmokeTestsPerf( 4211): Finished test: s_sm_01_appLaunch_homeVisible durationMs=172
+39399:12-01 13:59:15.841 I/SmokeTestsPerf( 4211): Starting test: s_sm_02_createNote_showsInList
+39790:12-01 13:59:16.358 I/SmokeTestsPerf( 4211): Finished test: s_sm_02_createNote_showsInList durationMs=516
+40070:12-01 13:59:17.425 I/SmokeTestsPerf( 4211): Starting test: s_sm_03_updateNote_changesTitle
+40430:12-01 13:59:17.889 I/SmokeTestsPerf( 4211): Finished test: s_sm_03_updateNote_changesTitle durationMs=464
+44794:12-01 14:01:43.658 I/SmokeTestsPerf( 4603): Starting test: s_sm_04_deleteNote_removesFromList
+45839:12-01 14:01:46.898 I/SmokeTestsPerf( 4603): Finished test: s_sm_04_deleteNote_removesFromList durationMs=3240
+46009:12-01 14:01:47.962 I/SmokeTestsPerf( 4603): Starting test: s_sm_01_appLaunch_homeVisible
+46329:12-01 14:01:48.163 I/SmokeTestsPerf( 4603): Finished test: s_sm_01_appLaunch_homeVisible durationMs=201
+46513:12-01 14:01:49.285 I/SmokeTestsPerf( 4603): Starting test: s_sm_02_createNote_showsInList
+47072:12-01 14:01:54.846 I/SmokeTestsPerf( 4603): Finished test: s_sm_02_createNote_showsInList durationMs=5562
+47385:12-01 14:01:55.919 I/SmokeTestsPerf( 4603): Starting test: s_sm_03_updateNote_changesTitle
+47918:12-01 14:02:01.550 I/SmokeTestsPerf( 4603): Finished test: s_sm_03_updateNote_changesTitle durationMs=5632
+50246:12-01 14:04:24.789 I/SmokeTestsPerf( 4914): Starting test: s_sm_04_deleteNote_removesFromList
+50910:12-01 14:04:27.484 I/SmokeTestsPerf( 4914): Finished test: s_sm_04_deleteNote_removesFromList durationMs=2694
+51035:12-01 14:04:28.551 I/SmokeTestsPerf( 4914): Starting test: s_sm_01_appLaunch_homeVisible
+51407:12-01 14:04:28.766 I/SmokeTestsPerf( 4914): Finished test: s_sm_01_appLaunch_homeVisible durationMs=215
+51548:12-01 14:04:29.835 I/SmokeTestsPerf( 4914): Starting test: s_sm_02_createNote_showsInList
+52012:12-01 14:04:31.201 I/SmokeTestsPerf( 4914): Finished test: s_sm_02_createNote_showsInList durationMs=1366
+52180:12-01 14:04:32.272 I/SmokeTestsPerf( 4914): Starting test: s_sm_03_updateNote_changesTitle
+52627:12-01 14:04:34.

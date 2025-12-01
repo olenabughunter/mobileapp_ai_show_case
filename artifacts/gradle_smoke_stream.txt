@@ -50,61 +50,53 @@ To determine what is calling BaseVariant.getApplicationIdTextResource, use -Pand
 > Task :app:stripDebugDebugSymbols NO-SOURCE
 > Task :app:validateSigningDebug UP-TO-DATE
 > Task :app:packageDebug UP-TO-DATE
+> Task :app:bundleDebugClasses UP-TO-DATE
 > Task :app:preDebugAndroidTestBuild SKIPPED
 > Task :app:compileDebugAndroidTestAidl NO-SOURCE
-> Task :app:bundleDebugClasses
-> Task :app:processDebugAndroidTestManifest
+> Task :app:processDebugAndroidTestManifest UP-TO-DATE
 > Task :app:compileDebugAndroidTestRenderscript NO-SOURCE
-> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest
-> Task :app:dataBindingMergeGenClassesDebugAndroidTest
-> Task :app:generateDebugAndroidTestResValues
-> Task :app:generateDebugAndroidTestResources
-> Task :app:generateDebugAndroidTestBuildConfig
-> Task :app:checkDebugAndroidTestAarMetadata
-> Task :app:javaPreCompileDebugAndroidTest
-> Task :app:mergeDebugAndroidTestShaders
+> Task :app:dataBindingMergeDependencyArtifactsDebugAndroidTest UP-TO-DATE
+> Task :app:dataBindingMergeGenClassesDebugAndroidTest UP-TO-DATE
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :app:generateDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeDebugAndroidTestResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebugAndroidTest UP-TO-DATE
+> Task :app:generateDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:checkDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:processDebugAndroidTestResources UP-TO-DATE
+> Task :app:kaptGenerateStubsDebugAndroidTestKotlin UP-TO-DATE
+> Task :app:kaptDebugAndroidTestKotlin UP-TO-DATE
+> Task :app:compileDebugAndroidTestKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebugAndroidTest UP-TO-DATE
+> Task :app:compileDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:mergeDebugAndroidTestShaders UP-TO-DATE
 > Task :app:compileDebugAndroidTestShaders NO-SOURCE
 > Task :app:generateDebugAndroidTestAssets UP-TO-DATE
-> Task :app:mergeDebugAndroidTestAssets
-> Task :app:compressDebugAndroidTestAssets
+> Task :app:mergeDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressDebugAndroidTestAssets UP-TO-DATE
 > Task :app:processDebugAndroidTestJavaRes NO-SOURCE
-> Task :app:mergeDebugAndroidTestJniLibFolders
-> Task :app:desugarDebugAndroidTestFileDependencies
-> Task :app:checkDebugAndroidTestDuplicateClasses
-> Task :app:validateSigningDebugAndroidTest
-> Task :app:mergeDebugAndroidTestNativeLibs
-> Task :app:mergeDebugAndroidTestResources
-> Task :app:dataBindingGenBaseClassesDebugAndroidTest
-> Task :app:mergeLibDexDebugAndroidTest
-> Task :app:mergeExtDexDebugAndroidTest
-> Task :app:processDebugAndroidTestResources
-> Task :app:kaptGenerateStubsDebugAndroidTestKotlin
-> Task :app:kaptDebugAndroidTestKotlin
-> Task :app:compileDebugAndroidTestKotlin
-> Task :app:compileDebugAndroidTestJavaWithJavac
-> Task :app:dexBuilderDebugAndroidTest
-> Task :app:mergeProjectDexDebugAndroidTest
-> Task :app:mergeDebugAndroidTestJavaResource
-> Task :app:packageDebugAndroidTest
+> Task :app:mergeDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:mergeDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugAndroidTestNativeLibs UP-TO-DATE
+> Task :app:checkDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexDebugAndroidTest UP-TO-DATE
+> Task :app:dexBuilderDebugAndroidTest UP-TO-DATE
+> Task :app:mergeProjectDexDebugAndroidTest UP-TO-DATE
+> Task :app:validateSigningDebugAndroidTest UP-TO-DATE
+> Task :app:packageDebugAndroidTest UP-TO-DATE
 
 > Task :app:connectedDebugAndroidTest
 Starting 4 tests on Pixel_9_Pro_XL(AVD) - 16
 
-com.bersyte.noteapp.SmokeTests > s_sm_04_deleteNote_removesFromList[Pixel_9_Pro_XL(AVD) - 16] [31mFAILED [0m
-	java.lang.IllegalStateException: Querying activity state off main thread is not allowed.
-	at androidx.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl.checkMainThread(ActivityLifecycleMonitorImpl.java:186)
-
-com.bersyte.noteapp.SmokeTests > s_sm_01_appLaunch_homeVisible[Pixel_9_Pro_XL(AVD) - 16] [31mFAILED [0m
-	java.lang.IllegalStateException: Querying activity state off main thread is not allowed.
-	at androidx.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl.checkMainThread(ActivityLifecycleMonitorImpl.java:186)
-
 com.bersyte.noteapp.SmokeTests > s_sm_02_createNote_showsInList[Pixel_9_Pro_XL(AVD) - 16] [31mFAILED [0m
-	java.lang.IllegalStateException: Querying activity state off main thread is not allowed.
-	at androidx.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl.checkMainThread(ActivityLifecycleMonitorImpl.java:186)
+	androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: with id is <com.bersyte.noteapp:id/etNoteTitle>
+	
 
 com.bersyte.noteapp.SmokeTests > s_sm_03_updateNote_changesTitle[Pixel_9_Pro_XL(AVD) - 16] [31mFAILED [0m
-	java.lang.IllegalStateException: Querying activity state off main thread is not allowed.
-	at androidx.test.internal.runner.lifecycle.ActivityLifecycleMonitorImpl.checkMainThread(ActivityLifecycleMonitorImpl.java:186)
+	androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: with id is <com.bersyte.noteapp:id/etNoteTitle>
+	
 
 > Task :app:connectedDebugAndroidTest FAILED
-64 actionable tasks: 30 executed, 34 up-to-date
+64 actionable tasks: 1 executed, 63 up-to-date
