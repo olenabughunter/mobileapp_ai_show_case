@@ -37,6 +37,7 @@ import org.junit.rules.TestName
 // Robots / Page objects
 object HomeRobot {
     fun assertHomeVisible() {
+        Log.i("TestSteps", "HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote")
         onView(withId(R.id.recyclerView))
             .check(matches(isDisplayed()))
 
@@ -61,8 +62,10 @@ object NewNoteRobot {
     }
 
     fun createNote(title: String, body: String = "") {
+        Log.i("TestSteps", "NewNoteRobot.createNote: start (title='${title.take(40)}')")
         // Navigate to NewNoteFragment programmatically to avoid flaky FAB click/navigation races
         try {
+            Log.i("TestSteps", "NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment")
             InstrumentationRegistry.getInstrumentation().runOnMainSync {
                 val resumed = ActivityLifecycleMonitorRegistry.getInstance().getActivitiesInStage(Stage.RESUMED).iterator().next()
                 if (resumed is androidx.fragment.app.FragmentActivity) {
@@ -71,42 +74,52 @@ object NewNoteRobot {
                 }
             }
         } catch (e: Exception) {
+            Log.i("TestSteps", "NewNoteRobot.createNote: programmatic navigation failed, falling back to FAB click")
             // fallback to clicking the FAB if programmatic navigation fails for any reason
             try {
                 onView(withId(R.id.fabAddNote)).perform(click())
-            } catch (_: Exception) {}
+            } catch (_: Exception) { Log.i("TestSteps", "NewNoteRobot.createNote: FAB click fallback also failed") }
         }
 
         // Wait for NewNote screen to appear and title field to be visible
+        Log.i("TestSteps", "NewNoteRobot.createNote: waiting for etNoteTitle")
         waitForView(R.id.etNoteTitle, 5000L)
 
+        Log.i("TestSteps", "NewNoteRobot.createNote: typing title (prefix='${title.take(40)}')")
         onView(withId(R.id.etNoteTitle)).perform(replaceText(title), closeSoftKeyboard())
 
         if (body.isNotEmpty()) {
+            Log.i("TestSteps", "NewNoteRobot.createNote: typing body (length=${body.length})")
             onView(withId(R.id.etNoteBody)).perform(replaceText(body), closeSoftKeyboard())
         }
 
         // Try to click the save menu item. If it can't be found in the view hierarchy (action item inside Toolbar),
         // fall back to clicking approximate coordinates on the toolbar using UiDevice.
         try {
+            Log.i("TestSteps", "NewNoteRobot.createNote: attempting to click menu_save")
             onView(withId(R.id.menu_save)).perform(click())
         } catch (e: Exception) {
+            Log.i("TestSteps", "NewNoteRobot.createNote: menu_save not found, trying UiDevice click")
             try {
                 val inst = InstrumentationRegistry.getInstrumentation()
                 val metrics = inst.context.resources.displayMetrics
                 val x = metrics.widthPixels - 60 // near right edge
                 val y = 80 // near top (toolbar area) — adjust if needed on different devices
                 UiDevice.getInstance(inst).click(x, y)
+                Log.i("TestSteps", "NewNoteRobot.createNote: UiDevice click performed")
             } catch (_: Exception) {
+                Log.i("TestSteps", "NewNoteRobot.createNote: UiDevice click also failed")
                 // last resort: ignore — test will fail with a clear message
             }
         }
+        Log.i("TestSteps", "NewNoteRobot.createNote: finished")
     }
 }
 
 
 object UpdateNoteRobot {
     fun openNoteAt(position: Int) {
+        Log.i("TestSteps", "UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=$position")
         onView(withId(R.id.recyclerView))
             .perform(
                 actionOnItemAtPosition<NoteAdapter.NoteViewHolder>(
@@ -116,17 +129,21 @@ object UpdateNoteRobot {
     }
 
     fun updateTitle(newTitle: String) {
+        Log.i("TestSteps", "UpdateNoteRobot.updateTitle: replacing title with prefix='${newTitle.take(40)}'")
         onView(withId(R.id.etNoteTitleUpdate)).perform(replaceText(newTitle), closeSoftKeyboard())
         // Update screen saves via FAB (fab_done) instead of a menu item
         try {
+            Log.i("TestSteps", "UpdateNoteRobot.updateTitle: attempting to click fab_done")
             onView(withId(R.id.fab_done)).perform(click())
         } catch (e: Exception) {
+            Log.i("TestSteps", "UpdateNoteRobot.updateTitle: fab_done not found, trying menu_save fallback")
             // If FAB not found, try the menu save (historical fallback)
-            try { onView(withId(R.id.menu_save)).perform(click()) } catch (_: Exception) {}
+            try { onView(withId(R.id.menu_save)).perform(click()) } catch (_: Exception) { Log.i("TestSteps", "UpdateNoteRobot.updateTitle: menu_save fallback failed") }
         }
     }
 
     fun deleteNote() {
+        Log.i("TestSteps", "UpdateNoteRobot.deleteNote: attempting to click menu_delete")
         // Try tapping delete menu (if present in Update screen)
         onView(withId(R.id.menu_delete)).perform(click())
     }
