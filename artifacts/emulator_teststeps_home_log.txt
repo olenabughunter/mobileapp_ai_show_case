@@ -1,0 +1,235 @@
+87476:12-01 14:40:36.956 I/TestSteps( 7899): NewNoteRobot.createNote: start (title='Del_1764596436944')
+87477:12-01 14:40:36.956 I/TestSteps( 7899): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+87495:12-01 14:40:37.042 I/TestSteps( 7899): NewNoteRobot.createNote: waiting for etNoteTitle
+87595:12-01 14:40:37.505 I/TestSteps( 7899): NewNoteRobot.createNote: typing title (prefix='Del_1764596436944')
+87621:12-01 14:40:37.527 I/TestSteps( 7899): NewNoteRobot.createNote: attempting to click menu_save
+87653:12-01 14:40:38.303 I/TestSteps( 7899): NewNoteRobot.createNote: finished
+87654:12-01 14:40:38.303 I/TestSteps( 7899): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+87693:12-01 14:40:39.041 I/TestSteps( 7899): UpdateNoteRobot.deleteNote: attempting to click menu_delete
+88272:12-01 14:40:40.737 I/TestSteps( 7899): HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote
+88814:12-01 14:40:42.108 I/TestSteps( 7899): NewNoteRobot.createNote: start (title='SmokeNote_1764596442108')
+88815:12-01 14:40:42.108 I/TestSteps( 7899): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+88817:12-01 14:40:42.112 I/TestSteps( 7899): NewNoteRobot.createNote: waiting for etNoteTitle
+88894:12-01 14:40:42.571 I/TestSteps( 7899): NewNoteRobot.createNote: typing title (prefix='SmokeNote_1764596442108')
+88920:12-01 14:40:42.588 I/TestSteps( 7899): NewNoteRobot.createNote: attempting to click menu_save
+88948:12-01 14:40:43.323 I/TestSteps( 7899): NewNoteRobot.createNote: finished
+89408:12-01 14:40:44.557 I/TestSteps( 7899): NewNoteRobot.createNote: start (title='Orig_1764596444557')
+89409:12-01 14:40:44.557 I/TestSteps( 7899): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+89410:12-01 14:40:44.561 I/TestSteps( 7899): NewNoteRobot.createNote: waiting for etNoteTitle
+89480:12-01 14:40:45.021 I/TestSteps( 7899): NewNoteRobot.createNote: typing title (prefix='Orig_1764596444557')
+89506:12-01 14:40:45.040 I/TestSteps( 7899): NewNoteRobot.createNote: attempting to click menu_save
+89549:12-01 14:40:45.785 I/TestSteps( 7899): NewNoteRobot.createNote: finished
+89550:12-01 14:40:45.785 I/TestSteps( 7899): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+89588:12-01 14:40:46.504 I/TestSteps( 7899): UpdateNoteRobot.updateTitle: replacing title with prefix='Updated_1764596444557'
+89600:12-01 14:40:46.525 I/TestSteps( 7899): UpdateNoteRobot.updateTitle: attempting to click fab_done
+92287:12-01 14:43:20.707 I/TestSteps( 8187): NewNoteRobot.createNote: start (title='Persist_1764596600704')
+92288:12-01 14:43:20.707 I/TestSteps( 8187): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+92290:12-01 14:43:20.715 I/TestSteps( 8187): NewNoteRobot.createNote: waiting for etNoteTitle
+92388:12-01 14:43:21.260 I/TestSteps( 8187): NewNoteRobot.createNote: typing title (prefix='Persist_1764596600704')
+92414:12-01 14:43:21.281 I/TestSteps( 8187): NewNoteRobot.createNote: attempting to click menu_save
+92448:12-01 14:43:22.053 I/TestSteps( 8187): NewNoteRobot.createNote: finished
+93333:12-01 14:43:23.836 I/TestSteps( 8187): NewNoteRobot.createNote: start (title='LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+93334:12-01 14:43:23.836 I/TestSteps( 8187): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+93336:12-01 14:43:23.840 I/TestSteps( 8187): NewNoteRobot.createNote: waiting for etNoteTitle
+93456:12-01 14:43:24.304 I/TestSteps( 8187): NewNoteRobot.createNote: typing title (prefix='LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+93482:12-01 14:43:24.341 I/TestSteps( 8187): NewNoteRobot.createNote: typing body (length=8000)
+93495:12-01 14:43:24.362 I/TestSteps( 8187): NewNoteRobot.createNote: attempting to click menu_save
+93530:12-01 14:43:25.102 I/TestSteps( 8187): NewNoteRobot.createNote: finished
+94094:12-01 14:43:27.424 I/TestSteps( 8187): HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote
+94527:12-01 14:43:28.680 I/TestSteps( 8187): NewNoteRobot.createNote: start (title='')
+94528:12-01 14:43:28.680 I/TestSteps( 8187): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+94529:12-01 14:43:28.685 I/TestSteps( 8187): NewNoteRobot.createNote: waiting for etNoteTitle
+94611:12-01 14:43:29.154 I/TestSteps( 8187): NewNoteRobot.createNote: typing title (prefix='')
+94622:12-01 14:43:29.172 I/TestSteps( 8187): NewNoteRobot.createNote: attempting to click menu_save
+94654:12-01 14:43:29.472 I/TestSteps( 8187): NewNoteRobot.createNote: finished
+98058:12-01 15:01:39.096 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='SpecChars_☃_1764597699090')
+98059:12-01 15:01:39.097 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+98061:12-01 15:01:39.110 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+98192:12-01 15:01:39.613 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='SpecChars_☃_1764597699090')
+98223:12-01 15:01:39.657 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=21)
+98238:12-01 15:01:39.670 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+98269:12-01 15:01:40.637 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+98270:12-01 15:01:40.638 I/TestSteps( 8564): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+98807:12-01 15:01:42.662 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='EditBody_1764597702662')
+98808:12-01 15:01:42.662 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+98809:12-01 15:01:42.665 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+98878:12-01 15:01:43.121 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='EditBody_1764597702662')
+98904:12-01 15:01:43.142 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=13)
+98917:12-01 15:01:43.155 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+98948:12-01 15:01:43.887 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+98949:12-01 15:01:43.887 I/TestSteps( 8564): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+98984:12-01 15:01:44.602 I/TestSteps( 8564): fc_02: replacing body text
+99023:12-01 15:01:45.337 I/TestSteps( 8564): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+99510:12-01 15:01:47.378 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='ToDelete_1764597707377')
+99511:12-01 15:01:47.378 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+99512:12-01 15:01:47.380 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+99600:12-01 15:01:47.837 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='ToDelete_1764597707377')
+99626:12-01 15:01:47.858 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=15)
+99639:12-01 15:01:47.870 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+99670:12-01 15:01:48.602 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+99671:12-01 15:01:48.602 I/TestSteps( 8564): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+99707:12-01 15:01:49.324 I/TestSteps( 8564): UpdateNoteRobot.deleteNote: attempting to click menu_delete
+99740:12-01 15:01:49.749 I/TestSteps( 8564): fc_03: cardView empty-state not present or not visible; skipping
+100296:12-01 15:01:50.989 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='PersistProc_1764597710989')
+100297:12-01 15:01:50.989 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+100306:12-01 15:01:50.995 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+100375:12-01 15:01:51.454 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='PersistProc_1764597710989')
+100401:12-01 15:01:51.471 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=9)
+100414:12-01 15:01:51.488 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+100446:12-01 15:01:52.221 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+101367:12-01 15:01:54.151 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='Multi_17645977141511')
+101368:12-01 15:01:54.151 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+101370:12-01 15:01:54.155 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+101444:12-01 15:01:54.621 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='Multi_17645977141511')
+101474:12-01 15:01:54.682 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=5)
+101487:12-01 15:01:54.691 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+101519:12-01 15:01:55.421 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+101520:12-01 15:01:55.421 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='Multi_17645977141512')
+101521:12-01 15:01:55.421 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+101522:12-01 15:01:55.422 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+101530:12-01 15:01:55.871 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='Multi_17645977141512')
+101548:12-01 15:01:55.888 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=5)
+101561:12-01 15:01:55.906 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+101593:12-01 15:01:56.640 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+101594:12-01 15:01:56.640 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='Multi_17645977141513')
+101595:12-01 15:01:56.640 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+101596:12-01 15:01:56.642 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+101607:12-01 15:01:57.088 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='Multi_17645977141513')
+101625:12-01 15:01:57.104 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=5)
+101638:12-01 15:01:57.120 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+101671:12-01 15:01:57.869 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+102161:12-01 15:01:58.491 I/TestSteps( 8564): fc_01: search interaction not available on this device; skipping search-specific checks
+102881:12-01 15:01:59.983 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='Persist_1764597719983')
+102882:12-01 15:01:59.983 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+102884:12-01 15:01:59.989 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+102934:12-01 15:02:00.454 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='Persist_1764597719983')
+102960:12-01 15:02:00.473 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+103000:12-01 15:02:01.202 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+103894:12-01 15:02:03.110 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+103895:12-01 15:02:03.110 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+103896:12-01 15:02:03.113 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+103938:12-01 15:02:03.570 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+103964:12-01 15:02:03.592 I/TestSteps( 8564): NewNoteRobot.createNote: typing body (length=8000)
+103977:12-01 15:02:03.611 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+104015:12-01 15:02:04.370 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+104516:12-01 15:02:06.802 I/TestSteps( 8564): HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote
+104909:12-01 15:02:08.056 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='')
+104910:12-01 15:02:08.056 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+104911:12-01 15:02:08.060 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+104954:12-01 15:02:08.539 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='')
+104968:12-01 15:02:08.557 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+104999:12-01 15:02:08.858 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+105437:12-01 15:02:10.076 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='Del_1764597730076')
+105438:12-01 15:02:10.076 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+105448:12-01 15:02:10.081 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+105493:12-01 15:02:10.556 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='Del_1764597730076')
+105519:12-01 15:02:10.573 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+105551:12-01 15:02:11.304 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+105552:12-01 15:02:11.304 I/TestSteps( 8564): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+105592:12-01 15:02:12.018 I/TestSteps( 8564): UpdateNoteRobot.deleteNote: attempting to click menu_delete
+106074:12-01 15:02:13.608 I/TestSteps( 8564): HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote
+106455:12-01 15:02:14.910 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='SmokeNote_1764597734910')
+106456:12-01 15:02:14.910 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+106458:12-01 15:02:14.913 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+106528:12-01 15:02:15.389 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='SmokeNote_1764597734910')
+106554:12-01 15:02:15.406 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+106584:12-01 15:02:16.136 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+107020:12-01 15:02:17.394 I/TestSteps( 8564): NewNoteRobot.createNote: start (title='Orig_1764597737393')
+107021:12-01 15:02:17.394 I/TestSteps( 8564): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+107022:12-01 15:02:17.398 I/TestSteps( 8564): NewNoteRobot.createNote: waiting for etNoteTitle
+107067:12-01 15:02:17.871 I/TestSteps( 8564): NewNoteRobot.createNote: typing title (prefix='Orig_1764597737393')
+107093:12-01 15:02:17.891 I/TestSteps( 8564): NewNoteRobot.createNote: attempting to click menu_save
+107127:12-01 15:02:18.619 I/TestSteps( 8564): NewNoteRobot.createNote: finished
+107128:12-01 15:02:18.619 I/TestSteps( 8564): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+107163:12-01 15:02:19.337 I/TestSteps( 8564): UpdateNoteRobot.updateTitle: replacing title with prefix='Updated_1764597737393'
+107181:12-01 15:02:19.355 I/TestSteps( 8564): UpdateNoteRobot.updateTitle: attempting to click fab_done
+112240:12-01 15:03:30.876 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='SpecChars_☃_1764597810872')
+112241:12-01 15:03:30.876 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+112243:12-01 15:03:30.893 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+112316:12-01 15:03:31.474 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='SpecChars_☃_1764597810872')
+112342:12-01 15:03:31.505 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=21)
+112357:12-01 15:03:31.525 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+112390:12-01 15:03:32.304 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+112391:12-01 15:03:32.304 I/TestSteps( 9033): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+112828:12-01 15:03:34.301 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='EditBody_1764597814301')
+112829:12-01 15:03:34.301 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+112830:12-01 15:03:34.305 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+112872:12-01 15:03:34.772 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='EditBody_1764597814301')
+112898:12-01 15:03:34.790 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=13)
+112911:12-01 15:03:34.805 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+112943:12-01 15:03:35.536 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+112944:12-01 15:03:35.536 I/TestSteps( 9033): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+112979:12-01 15:03:36.256 I/TestSteps( 9033): fc_02: replacing body text
+113018:12-01 15:03:36.987 I/TestSteps( 9033): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+113480:12-01 15:03:38.970 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='ToDelete_1764597818969')
+113481:12-01 15:03:38.970 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+113482:12-01 15:03:38.976 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+113541:12-01 15:03:39.438 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='ToDelete_1764597818969')
+113567:12-01 15:03:39.457 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=15)
+113580:12-01 15:03:39.470 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+113612:12-01 15:03:40.204 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+113613:12-01 15:03:40.204 I/TestSteps( 9033): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+113649:12-01 15:03:40.920 I/TestSteps( 9033): UpdateNoteRobot.deleteNote: attempting to click menu_delete
+113682:12-01 15:03:41.239 I/TestSteps( 9033): fc_03: cardView empty-state not present or not visible; skipping
+114166:12-01 15:03:42.485 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='PersistProc_1764597822484')
+114167:12-01 15:03:42.485 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+114185:12-01 15:03:42.490 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+114228:12-01 15:03:42.954 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='PersistProc_1764597822484')
+114254:12-01 15:03:42.973 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=9)
+114267:12-01 15:03:42.989 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+114300:12-01 15:03:43.722 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+115173:12-01 15:03:45.619 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='Multi_17645978256191')
+115174:12-01 15:03:45.619 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+115175:12-01 15:03:45.622 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+115219:12-01 15:03:46.087 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='Multi_17645978256191')
+115245:12-01 15:03:46.109 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=5)
+115258:12-01 15:03:46.121 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+115288:12-01 15:03:46.872 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+115289:12-01 15:03:46.872 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='Multi_17645978256192')
+115290:12-01 15:03:46.872 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+115291:12-01 15:03:46.874 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+115302:12-01 15:03:47.320 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='Multi_17645978256192')
+115320:12-01 15:03:47.337 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=5)
+115333:12-01 15:03:47.354 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+115365:12-01 15:03:48.093 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+115366:12-01 15:03:48.093 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='Multi_17645978256193')
+115367:12-01 15:03:48.093 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+115368:12-01 15:03:48.096 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+115376:12-01 15:03:48.538 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='Multi_17645978256193')
+115394:12-01 15:03:48.554 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=5)
+115407:12-01 15:03:48.573 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+115442:12-01 15:03:49.303 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+115570:12-01 15:03:49.939 I/TestSteps( 9033): fc_01: search interaction not available on this device; skipping search-specific checks
+116117:12-01 15:03:51.287 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='Persist_1764597831287')
+116118:12-01 15:03:51.287 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+116119:12-01 15:03:51.292 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+116161:12-01 15:03:51.756 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='Persist_1764597831287')
+116187:12-01 15:03:51.776 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+116220:12-01 15:03:52.520 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+117104:12-01 15:03:54.738 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+117105:12-01 15:03:54.738 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+117106:12-01 15:03:54.741 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+117152:12-01 15:03:55.205 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL')
+117178:12-01 15:03:55.224 I/TestSteps( 9033): NewNoteRobot.createNote: typing body (length=8000)
+117191:12-01 15:03:55.241 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+117224:12-01 15:03:55.985 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+117678:12-01 15:03:58.374 I/TestSteps( 9033): HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote
+118088:12-01 15:03:59.719 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='')
+118089:12-01 15:03:59.719 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+118092:12-01 15:03:59.725 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+118138:12-01 15:04:00.205 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='')
+118149:12-01 15:04:00.224 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+118180:12-01 15:04:00.524 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+118594:12-01 15:04:01.801 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='Del_1764597841801')
+118595:12-01 15:04:01.801 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+118596:12-01 15:04:01.805 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+118639:12-01 15:04:02.288 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='Del_1764597841801')
+118665:12-01 15:04:02.306 I/TestSteps( 9033): NewNoteRobot.createNote: attempting to click menu_save
+118698:12-01 15:04:03.035 I/TestSteps( 9033): NewNoteRobot.createNote: finished
+118699:12-01 15:04:03.035 I/TestSteps( 9033): UpdateNoteRobot.openNoteAt: clicking recyclerView item at position=0
+118733:12-01 15:04:03.753 I/TestSteps( 9033): UpdateNoteRobot.deleteNote: attempting to click menu_delete
+119226:12-01 15:04:05.282 I/TestSteps( 9033): HomeRobot.assertHomeVisible: checking recyclerView and fabAddNote
+119662:12-01 15:04:06.658 I/TestSteps( 9033): NewNoteRobot.createNote: start (title='SmokeNote_1764597846658')
+119663:12-01 15:04:06.658 I/TestSteps( 9033): NewNoteRobot.createNote: attempting programmatic navigation to NewNoteFragment
+119665:12-01 15:04:06.662 I/TestSteps( 9033): NewNoteRobot.createNote: waiting for etNoteTitle
+119715:12-01 15:04:07.137 I/TestSteps( 9033): NewNoteRobot.createNote: typing title (prefix='SmokeNote_

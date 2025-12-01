@@ -7,6 +7,7 @@ import androidx.test.espresso.action.ViewActions.pressBack
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition
 import androidx.test.espresso.matcher.ViewMatchers.*
+import org.hamcrest.Matchers.allOf
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.bersyte.noteapp.MainActivity
@@ -28,8 +29,9 @@ class HomeFragmentTest {
 
     @Test
     fun test_noNote_CardView() {
-
-        onView(withId(R.id.cardView))
+        // The RecyclerView may contain multiple cardView instances. Assert the empty-state card by
+        // matching the cardView which contains the no-note TextView with expected text.
+        onView(allOf(withId(R.id.cardView), hasDescendant(withId(R.id.tv_no_note_available)), isDisplayed()))
             .check(matches(isDisplayed()))
 
         onView(withId(R.id.fabAddNote))
