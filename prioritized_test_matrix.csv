@@ -1,0 +1,14 @@
+id,title,ci_priority,estimated_runtime_min,flakiness_risk,notes
+s_sm_01,appLaunch_homeVisible,Critical,0.5,Low,Very fast smoke check - include in every pipeline run
+s_sm_02,createNote_showsInList,Critical,1,Medium,Creates data - ensure cleanup or isolated DB per job
+s_sm_03,updateNote_changesTitle,High,1,Medium,Verification of update flow; depends on UI stability
+s_sm_04,deleteNote_removesFromList,High,1,Medium,Delete flow variance across devices - keep fallbacks
+f_reg_01,empty_title_validation,Critical,0.5,Low,Stable UI assertion preferred over toast
+f_reg_03,room_persistence_across_restarts,High,1.5,Low,Persistence verification; low flakiness if DB isolated
+repo_01,repository_crud,Critical,0.5,Low,Run as unit/instrumented with in-memory DB for speed
+unit_01,addNote_delegates_to_repository,Critical,0.2,Low,Unit test - very fast and reliable
+fc_05,persistence_after_process_restart,High,1.5,Low,Similar to f_reg_03; include in nightly if runtime constrained
+ct_01,full_crud_flow,Medium,3,High,Long end-to-end - split into smaller tests for CI
+ct_02,empty_title_shows_toast,Medium,0.5,High,Flaky on emulators - run on dedicated device lab
+ct_03,search_filters_list,Medium,1,Medium,Search interactions differ by device; tolerate relaxed assertions
+f_reg_04,large_input_handling,Low,2,Medium,Performance-sensitive; run in longer test suites
