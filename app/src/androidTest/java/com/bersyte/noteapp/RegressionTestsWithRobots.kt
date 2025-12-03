@@ -12,6 +12,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
 import org.hamcrest.CoreMatchers.startsWith
+import org.hamcrest.Matchers.allOf
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -96,7 +97,7 @@ class RegressionTests {
         scenario = ActivityScenario.launch(MainActivity::class.java)
 
         // Verify note persists in list
-        onView(withText(startsWith("Persist_"))).check(matches(isDisplayed()))
+        onView(allOf(withText(startsWith("Persist_")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
     }
 
     @Test
@@ -108,6 +109,6 @@ class RegressionTests {
 
         // Verify that an item with long title prefix is visible in the list
         // Check prefix to avoid matching entire long string
-        onView(withText(startsWith("L"))).check(matches(isDisplayed()))
+        onView(allOf(withText(startsWith("L")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
     }
 }

@@ -74,7 +74,17 @@ class ExtraCoverageTests {
         val body = "B".repeat(1000)
         NewNoteRobot.createNote(title, body)
         // Verify by matching prefix (avoid full long string match)
-        onView(withText(startsWith(title.substring(0, 20)))).check(matches(isDisplayed()))
+        try {
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith(title.substring(0, 20)))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(title.substring(0, 20)))))
+            androidx.test.espresso.Espresso.pressBack()
+        } catch (_: Exception) {
+            onView(withText(startsWith(title.substring(0, 20)))).check(matches(isDisplayed()))
+        }
     }
 
     @Test

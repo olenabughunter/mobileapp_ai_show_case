@@ -13,6 +13,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
 import org.hamcrest.CoreMatchers.startsWith
+import org.hamcrest.Matchers.allOf
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -66,10 +67,37 @@ class FullCoverageTests {
         NewNoteRobot.createNote(base + "2", "body2")
         NewNoteRobot.createNote(base + "3", "body3")
 
-        // Verify each created note appears (check by prefix)
-        onView(withText(startsWith(base + "1"))).check(matches(isDisplayed()))
-        onView(withText(startsWith(base + "2"))).check(matches(isDisplayed()))
-        onView(withText(startsWith(base + "3"))).check(matches(isDisplayed()))
+        // Verify each created note appears by opening the matching item and asserting its title in the update screen
+        try {
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith(base + "1"))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(base + "1"))))
+            androidx.test.espresso.Espresso.pressBack()
+
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith(base + "2"))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(base + "2"))))
+            androidx.test.espresso.Espresso.pressBack()
+
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith(base + "3"))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(base + "3"))))
+            androidx.test.espresso.Espresso.pressBack()
+        } catch (_: Exception) {
+            Log.i("TestSteps", "fc_01: fallback to existence checks — search interaction may be limited on this device")
+            onView(allOf(withText(startsWith(base + "1")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+            onView(allOf(withText(startsWith(base + "2")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+            onView(allOf(withText(startsWith(base + "3")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+        }
 
         // Use the HomeFragment search action: open search action view and type a query to filter
         try {
@@ -93,8 +121,8 @@ class FullCoverageTests {
             // actionView of search is typically a SearchView; attempt to type query into the search text field
             onView(isAssignableFrom(androidx.appcompat.widget.SearchView::class.java)).perform(replaceText(base + "2"))
             SystemClock.sleep(500)
-            // Check that only the matching item is visible
-            onView(withText(startsWith(base + "2"))).check(matches(isDisplayed()))
+            // Check that only the matching item is visible (scoped to recycler view)
+            onView(allOf(withText(startsWith(base + "2")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
         } catch (_: Exception) {
             // If search interaction isn't possible in instrumentation environment, simply assert presence of created notes
             Log.i("TestSteps", "fc_01: search interaction not available on this device; skipping search-specific checks")
@@ -195,7 +223,17 @@ class FullCoverageTests {
         SystemClock.sleep(400)
         scenario = ActivityScenario.launch(MainActivity::class.java)
 
-        // Verify note still present
-        onView(withText(startsWith("PersistProc_"))).check(matches(isDisplayed()))
+        // Verify note still present by opening it and checking the update title field
+        try {
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith("PersistProc_"))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith("PersistProc_"))))
+        } catch (_: Exception) {
+            // fallback: assert existence in list
+            onView(allOf(withText(startsWith("PersistProc_")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+        }
     }
 }
