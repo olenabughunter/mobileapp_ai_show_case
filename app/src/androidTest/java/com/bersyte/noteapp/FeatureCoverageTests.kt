@@ -16,6 +16,7 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.appcompat.widget.SearchView
 import org.hamcrest.CoreMatchers.startsWith
 import org.hamcrest.CoreMatchers.containsString
+import org.hamcrest.Matchers.allOf
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -164,7 +165,7 @@ class FeatureCoverageTests {
         val longTitle = "L".repeat(1000)
         val longBody = "B".repeat(5000)
         NewNoteRobot.createNote(longTitle, longBody)
-        try { onView(withText(startsWith(longTitle.take(20)))).check(matches(isDisplayed())) } catch (e: Exception) { Log.i("FeatureCoverageTests","Long note not visible: ${'$'}e") }
+        try { onView(allOf(withText(startsWith(longTitle.take(20))), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed())) } catch (e: Exception) { Log.i("FeatureCoverageTests","Long note not visible: ${'$'}e") }
     }
 
     @Test
