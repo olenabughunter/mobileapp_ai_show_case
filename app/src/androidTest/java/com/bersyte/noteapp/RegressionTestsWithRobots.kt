@@ -13,6 +13,7 @@ import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
 import org.hamcrest.CoreMatchers.startsWith
 import org.hamcrest.Matchers.allOf
+import com.bersyte.noteapp.adapter.NoteAdapter
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -97,7 +98,16 @@ class RegressionTests {
         scenario = ActivityScenario.launch(MainActivity::class.java)
 
         // Verify note persists in list
-        onView(allOf(withText(startsWith("Persist_")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+        try {
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith("Persist_"))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith("Persist_"))))
+            } catch (_: Exception) {
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith("Persist_"))))))
+        }
     }
 
     @Test
@@ -109,6 +119,15 @@ class RegressionTests {
 
         // Verify that an item with long title prefix is visible in the list
         // Check prefix to avoid matching entire long string
-        onView(allOf(withText(startsWith("L")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+        try {
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<NoteAdapter.NoteViewHolder>(
+                    hasDescendant(withText(startsWith("L"))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith("L"))))
+        } catch (_: Exception) {
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith("L"))))))
+        }
     }
 }

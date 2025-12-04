@@ -66,11 +66,31 @@ class FeatureCoverageTests {
         NewNoteRobot.createNote(base + "2", "body2")
         NewNoteRobot.createNote(base + "3", "body3")
 
-        // Assert each present
+        // Verify each created note appears by opening matching items and asserting title in update screen
         try {
-            onView(withText(startsWith(base + "1"))).check(matches(isDisplayed()))
-            onView(withText(startsWith(base + "2"))).check(matches(isDisplayed()))
-            onView(withText(startsWith(base + "3"))).check(matches(isDisplayed()))
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<androidx.recyclerview.widget.RecyclerView.ViewHolder>(
+                    hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "1")))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(base + "1"))))
+            androidx.test.espresso.Espresso.pressBack()
+
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<androidx.recyclerview.widget.RecyclerView.ViewHolder>(
+                    hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "2")))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(base + "2"))))
+            androidx.test.espresso.Espresso.pressBack()
+
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<androidx.recyclerview.widget.RecyclerView.ViewHolder>(
+                    hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "3")))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(base + "3"))))
+            androidx.test.espresso.Espresso.pressBack()
         } catch (e: Exception) {
             Log.i("FeatureCoverageTests","One of created notes not visible: ${'$'}e")
         }
@@ -154,7 +174,16 @@ class FeatureCoverageTests {
             scenario = ActivityScenario.launch(MainActivity::class.java)
             // small wait
             SystemClock.sleep(300)
-            onView(withText(startsWith(title))).check(matches(isDisplayed()))
+            try {
+                onView(withId(R.id.recyclerView)).perform(
+                    androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<androidx.recyclerview.widget.RecyclerView.ViewHolder>(
+                        hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(title)))), androidx.test.espresso.action.ViewActions.click()
+                    )
+                )
+                onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(title))))
+            } catch (_: Exception) {
+                onView(withText(startsWith(title))).check(matches(isDisplayed()))
+            }
         } catch (e: Exception) {
             Log.i("FeatureCoverageTests","Persistence check failed: ${'$'}e")
         }
@@ -165,7 +194,17 @@ class FeatureCoverageTests {
         val longTitle = "L".repeat(1000)
         val longBody = "B".repeat(5000)
         NewNoteRobot.createNote(longTitle, longBody)
-        try { onView(allOf(withText(startsWith(longTitle.take(20))), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed())) } catch (e: Exception) { Log.i("FeatureCoverageTests","Long note not visible: ${'$'}e") }
+        try {
+            onView(withId(R.id.recyclerView)).perform(
+                androidx.test.espresso.contrib.RecyclerViewActions.actionOnItem<androidx.recyclerview.widget.RecyclerView.ViewHolder>(
+                    hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(longTitle.take(20))))), androidx.test.espresso.action.ViewActions.click()
+                )
+            )
+            onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(longTitle.take(20)))))
+            androidx.test.espresso.Espresso.pressBack()
+        } catch (e: Exception) {
+            Log.i("FeatureCoverageTests","Long note not visible: ${'$'}e")
+        }
     }
 
     @Test

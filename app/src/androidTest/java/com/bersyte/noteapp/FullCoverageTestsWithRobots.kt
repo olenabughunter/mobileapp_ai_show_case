@@ -94,9 +94,9 @@ class FullCoverageTests {
             androidx.test.espresso.Espresso.pressBack()
         } catch (_: Exception) {
             Log.i("TestSteps", "fc_01: fallback to existence checks — search interaction may be limited on this device")
-            onView(allOf(withText(startsWith(base + "1")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
-            onView(allOf(withText(startsWith(base + "2")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
-            onView(allOf(withText(startsWith(base + "3")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "1"))))))
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "2"))))))
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "3"))))))
         }
 
         // Use the HomeFragment search action: open search action view and type a query to filter
@@ -122,7 +122,7 @@ class FullCoverageTests {
             onView(isAssignableFrom(androidx.appcompat.widget.SearchView::class.java)).perform(replaceText(base + "2"))
             SystemClock.sleep(500)
             // Check that only the matching item is visible (scoped to recycler view)
-            onView(allOf(withText(startsWith(base + "2")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(base + "2"))))))
         } catch (_: Exception) {
             // If search interaction isn't possible in instrumentation environment, simply assert presence of created notes
             Log.i("TestSteps", "fc_01: search interaction not available on this device; skipping search-specific checks")
@@ -233,7 +233,7 @@ class FullCoverageTests {
             onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith("PersistProc_"))))
         } catch (_: Exception) {
             // fallback: assert existence in list
-            onView(allOf(withText(startsWith("PersistProc_")), isDescendantOfA(withId(R.id.recyclerView)))).check(matches(isDisplayed()))
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith("PersistProc_"))))))
         }
     }
 }

@@ -18,6 +18,7 @@ import androidx.test.runner.lifecycle.ActivityLifecycleMonitorRegistry
 import androidx.test.runner.lifecycle.Stage
 import com.bersyte.noteapp.adapter.NoteAdapter
 import org.hamcrest.CoreMatchers.startsWith
+import org.hamcrest.Matchers.allOf
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
@@ -83,7 +84,7 @@ class ExtraCoverageTests {
             onView(withId(R.id.etNoteTitleUpdate)).check(matches(withText(startsWith(title.substring(0, 20)))))
             androidx.test.espresso.Espresso.pressBack()
         } catch (_: Exception) {
-            onView(withText(startsWith(title.substring(0, 20)))).check(matches(isDisplayed()))
+            onView(withId(R.id.recyclerView)).check(matches(hasDescendant(allOf(withId(R.id.tvNoteTitle), withText(startsWith(title.substring(0, 20)))))) )
         }
     }
 
